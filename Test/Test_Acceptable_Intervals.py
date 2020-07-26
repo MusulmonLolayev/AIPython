@@ -63,7 +63,7 @@ def main():
     for i in range(X.shape[1]):
         for j in range(i + 1, X.shape[1]):
             print('(', headers[i], ', ', headers[j], ')', sep='')
-            AcceptableInterval1(X[:, i], X[:, j], card, headers[i], headers[j], method='median')
+            AcceptableInterval(X[:, i], X[:, j], card, headers[i], headers[j], method='median')
 
 def main1():
 
@@ -78,14 +78,17 @@ def main1():
     #minmax_scale(X, copy=False)
 
     #result = np.empty(shape=(X.shape[1], X.shape[1]))
-    percentage = 0
+    percentage = 5
+
+    query_temp_str = "{2}={0} бўлган беморнинг, {3}={1} бўлиши қанчалик ўринли ёки тескариси {3}={1} " \
+                     "бўлган беморнинг {0}={2} бўлиши қанчали уринли?"
 
     indexing = np.arange(0, X.shape[0])
     print('Results for {0}%'.format(percentage))
     ss = set()
     s = 0
     for i in range(X.shape[0]):
-        print('Nard number: ', card[i], sep='')
+        print('Карта №: ', card[i], sep='')
         k = 0
         for j in range(X.shape[1]):
             for l in range(j + 1, X.shape[1]):
@@ -97,12 +100,15 @@ def main1():
                 test_value = X[i, j] / value_x - X[i, l] / value_y
 
                 if (test_value < q_left or q_right < test_value):
-                    print('(', headers[j], ', ', headers[l], ')', sep='')
+                    query = query_temp_str.format(X[i, j], X[i, l], headers[j], headers[l])
+                    print('(', headers[j], ', ', headers[l], ')', "\t" + query, sep='')
                     k += 1
                     ss.add(i)
         s += k
-        print("Number of pair: ", k, sep='')
-        k = 0
+        """if k != 0:
+            print("Количество пары: ", k, sep='')
+        else:
+            print("Нет пары")"""
     available = X.shape[1] * (X.shape[1] - 1) / 2
     print('Available number of pairs: ', available, sep='')
     print('Mean number of pairs: ', s / X.shape[0], sep='')
