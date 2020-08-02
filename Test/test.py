@@ -1,25 +1,18 @@
 import numpy as np
-import pandas;
+import pandas
+
+from Test.read_data import ToFormNumpy
+from ai.own.regression import KnnOptimalRegression
+
 
 def main():
+    X, types, y = ToFormNumpy("D:\\tanlanmalar\\gasterlogy1394.txt")
 
-    data = pandas.read_csv("D:/test.csv")
+    reg = KnnOptimalRegression()
 
-    X = np.array(data)
-    X = X[:, 0:]
-    #print(X)
+    reg.fit(X, y)
 
-    data = pandas.read_csv("D:/survived.csv")
-
-    y = np.array(data['Survived'])
-    #print(y)
-
-    unique, ln = np.unique(y, return_counts=True)
-
-    print(unique)
-    print(ln)
-
-
+    print(reg.predict(X))
 
 if __name__ == '__main__':
     main()

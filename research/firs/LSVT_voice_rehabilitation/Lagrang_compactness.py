@@ -4,8 +4,8 @@ from sklearn.neural_network import MLPClassifier
 
 from Test.read_data import ToFormNumpy
 from usingpackages.ctypesapi.cml import find_noisy, compactness
-from datamining.own.estimations import Lagranj_nd, Lagranj, Lagranj1
-from datamining.own.functions import Normalizing_Estmation
+from ai.own.estimations import Lagranj_nd, Lagranj, Lagranj1
+from ai.own.functions import Normalizing_Estmation
 import numpy as np
 import pandas as pd
 

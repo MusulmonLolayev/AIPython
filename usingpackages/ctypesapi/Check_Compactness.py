@@ -6,7 +6,7 @@ from Test.write_file import writeNP
 from usingpackages.ctypesapi.cml import compactness
 from uz.nuu.datamining.graphic.drawing import mscatter
 from uz.nuu.datamining.own.estimations import Lagranj, DecomposionEstimation
-from datamining.own.fris import Fris
+from ai.own.fris import Fris
 from uz.nuu.datamining.own.functions import Normalizing_Min_Max, Normalizing_Estmation, Normalizing_Estmation1
 import numpy as np
 

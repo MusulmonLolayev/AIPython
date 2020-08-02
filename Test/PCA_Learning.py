@@ -2,7 +2,7 @@ import numpy as np
 
 from Test.read_data import ToFormNumpy
 from uz.nuu.datamining.graphic.drawing import mscatter
-from datamining.own.fris import Fris
+from ai.own.fris import Fris
 
 X, types, y = ToFormNumpy("D:\\tanlanmalar\\giper_my.txt")
 

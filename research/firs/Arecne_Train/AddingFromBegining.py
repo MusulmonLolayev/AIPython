@@ -8,7 +8,7 @@ import numpy as np
 
 from usingpackages.ctypesapi.cml import cml, _doublepp, compactness
 from uz.nuu.datamining.own.estimations import Lagranj_nd
-from datamining.own.fris import Fris
+from ai.own.fris import Fris
 
 
 def main():

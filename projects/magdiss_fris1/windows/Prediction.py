@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QWidget, QHBoxLayout, QLabel, QPushButton, QMessageB
 
 from sklearn.model_selection import cross_val_score as CVS, KFold
 
-from datamining.own.classification import NearestNeighborClassifier_, NearestNeighborClassifier
+from ai.own.classification import NearestNeighborClassifier_, NearestNeighborClassifier
 
 import numpy as np
 

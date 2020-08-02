@@ -7,7 +7,7 @@ from Test.read_data import ToFormNumpy
 import numpy as np
 
 from usingpackages.ctypesapi.cml import cml, _doublepp, compactness
-from datamining.own.fris import Fris
+from ai.own.fris import Fris
 
 
 def main():

@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 import numpy as np
 
-from datamining.own.functions import Normalizing_Estmation
+from ai.own.functions import Normalizing_Estmation
 
 
 def main():

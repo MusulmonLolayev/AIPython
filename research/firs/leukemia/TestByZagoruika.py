@@ -5,9 +5,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import minmax_scale
 from sklearn.svm import SVC
 
-from datamining.own.classification import NearestNeighborClassifier, NearestNeighborClassifier_, TemplateClassifier
-from datamining.own.estimations import Lagranj1
-from datamining.own.functions import Normalizing_Estmation
+from ai.own.classification import NearestNeighborClassifier, NearestNeighborClassifier_, TemplateClassifier
+from ai.own.estimations import Lagranj1
+from ai.own.functions import Normalizing_Estmation
 from usingpackages.ctypesapi.cml import find_noisy, compactness
 import numpy as np
 import pandas as pd

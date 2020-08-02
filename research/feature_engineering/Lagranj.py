@@ -1,9 +1,9 @@
 from projects.magdiss_fris1.func.methods import ToFormNumpy
 from usingpackages.ctypesapi.cml import find_noisy, compactness
-from datamining.own.classification import NearestNeighborClassifier, TemplateClassifier, \
+from ai.own.classification import NearestNeighborClassifier, TemplateClassifier, \
     NearestNeighborClassifier_
-from datamining.own.estimations import Lagranj, Lagranj1
-from datamining.own.functions import Normalizing_Estmation
+from ai.own.estimations import Lagranj, Lagranj1
+from ai.own.functions import Normalizing_Estmation
 import numpy as np
 import pandas as pd
 

@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 from Test.read_data import ToFormNumpy
-from datamining.own.classification import NearestNeighborClassifier_, NearestNeighborClassifier
+from ai.own.classification import NearestNeighborClassifier_, NearestNeighborClassifier
 from usingpackages.ctypesapi.cml import compactness, find_standard, find_noisy
 
 

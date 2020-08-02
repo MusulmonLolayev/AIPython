@@ -5,9 +5,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score as CVS, KFold, train_test_split
 
-from datamining.own.classification import RegressionClassifier, EstimationClassifier, RegressionClassifier1
-from datamining.own.estimations import DivideIntervals, EstimationNominalFeture
-from datamining.own.functions import GeneralValues
+from ai.own.classification import RegressionClassifier, EstimationClassifier, RegressionClassifier1
+from ai.own.estimations import DivideIntervals, EstimationNominalFeture
+from ai.own.functions import GeneralValues
 from projects.magdiss_fris1.func.methods import ToFormNumpy
 
 

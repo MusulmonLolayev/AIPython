@@ -7,9 +7,9 @@ from sklearn.svm import SVC
 
 from Test.read_data import ToFormNumpy
 from usingpackages.ctypesapi.cml import find_noisy, compactness
-from datamining.own.classification import NearestNeighborClassifier, TemplateClassifier, \
+from ai.own.classification import NearestNeighborClassifier, TemplateClassifier, \
     NearestNeighborClassifier_
-from datamining.own.functions import Normalizing_Estmation
+from ai.own.functions import Normalizing_Estmation
 import numpy as np
 
 

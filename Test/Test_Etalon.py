@@ -1,5 +1,5 @@
 from Test.read_data import ToFormArray, ToFormNumpy
-from datamining.own.fris import Fris
+from ai.own.fris import Fris
 
 def main():
 

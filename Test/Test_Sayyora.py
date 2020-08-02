@@ -3,7 +3,7 @@ from sklearn.preprocessing import minmax_scale
 from Test.read_data import ToFormNumpy
 from Test.write_file import writeNP
 from uz.nuu.datamining.graphic.drawing import mscatter
-from datamining.own.fris import Fris
+from ai.own.fris import Fris
 
 
 def main():
