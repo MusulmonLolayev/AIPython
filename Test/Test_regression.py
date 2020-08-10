@@ -80,12 +80,12 @@ y[::5] += 1 * (0.5 - np.random.rand(8))
 
 # #############################################################################
 # Fit regression model
-n_neighbors = 5
-#n_neighbors = X.shape[0] // 2
+#n_neighbors = 5
+n_neighbors = X.shape[0] // 2
 
 for i, weights in enumerate(['uniform', 'distance']):
-    knn = neighbors.KNeighborsRegressor(n_neighbors, weights=weights)
-    #knn = KnnOptimalRegression()
+    #knn = neighbors.KNeighborsRegressor(n_neighbors, weights=weights)
+    knn = KnnOptimalRegression()
     y_ = knn.fit(X, y).predict(T)
 
     plt.subplot(2, 1, i + 1)

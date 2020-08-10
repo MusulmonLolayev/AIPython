@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.preprocessing import minmax_scale
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from sklearn.neural_network import MLPClassifier
 from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score as CVS, KFold, train_test_split
@@ -22,7 +22,7 @@ def main():
     print(rc.score(X, y))"""
 
 
-    nnc = EstimationClassifier()
+    nnc = RegressionClassifier()
     nn = MLPClassifier()
     svm = SVC()
 
